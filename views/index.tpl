@@ -11,19 +11,33 @@
 <body>
 
 <input type="text" id="search" placeholder="Type to search">
-<table id="table">
-   <tr>
-      <td>Apple</td>
-      <td>Green</td>
-   </tr>
-   <tr>
-      <td>Grapes</td>
-      <td>Green</td>
-   </tr>
-   <tr>
-      <td>Orange</td>
-      <td>Orange</td>
-   </tr>
+<table id="table_format">
+   <thead>
+      <tr>
+         <th>
+            <select id='filterText' style='display:inline-block' onchange='filterText()'>
+               <option selected value='all'>Select&nbsp;&nbsp;&nbsp;</option>
+               <option value='Apple'>Apple</option>
+               <option value='Grapes'>Grapes</option>
+               <option value='Orange'>Orange</option>
+            </select>
+         </th>
+      </tr>
+   </thead>
+   <tbody id="myTable">
+      <tr class="content">
+         <td>Apple</td>
+         <td>Green</td>
+      </tr>
+      <tr class="content">
+         <td>Grapes</td>
+         <td>Green</td>
+      </tr>
+      <tr class="content">
+         <td>Orange</td>
+         <td>Orange</td>
+      </tr>
+   <tbody>
 </table>
 
 <h2>What Can JavaScript Do?</h2>
